@@ -1,0 +1,533 @@
+[gd_scene format=3 uid="uid://bnngsgfguunv7"]
+
+[ext_resource type="PackedScene" uid="uid://u281xdtyj5bo" path="res://按键.tscn" id="3_105as"]
+[ext_resource type="Script" uid="uid://cqoc63ip2wgq7" path="res://退出.gd" id="3_mujii"]
+[ext_resource type="Script" uid="uid://dkupgaqrb17ar" path="res://h_slider.gd" id="3_v8t4v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_105as"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9, 0.444, 0.17999998, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mujii"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.48600003, 0.42000002, 0.39215687)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v8t4v"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.33199993, 0.8, 0.08000002, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1tjqo"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.48299998, 0.6, 0.42000002, 0.39215687)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fpmlh"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.08000002, 0.48799998, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qhron"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.42000002, 0.522, 0.6, 0.39215687)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5cvgg"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 5
+
+[node name="Control" type="Control" unique_id=442082997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1087840456]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1694617118]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 61.0
+offset_top = 338.0
+offset_right = -69.89502
+offset_bottom = -365.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="键盘" type="BoxContainer" parent="ScrollContainer" unique_id=495979992]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="2" type="VBoxContainer" parent="ScrollContainer/键盘" unique_id=1848295760]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="C2" parent="ScrollContainer/键盘/2" unique_id=511395131 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "C2"
+num_key = 2
+
+[node name="C#2" parent="ScrollContainer/键盘/2" unique_id=276647374 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_mujii")
+text = "C#2"
+num_key = 2
+note_key = "C#"
+
+[node name="D2" parent="ScrollContainer/键盘/2" unique_id=1884950945 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "D2"
+num_key = 2
+note_key = "D"
+
+[node name="D#2" parent="ScrollContainer/键盘/2" unique_id=1773655639 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_mujii")
+text = "D#2"
+num_key = 2
+note_key = "D#"
+
+[node name="E2" parent="ScrollContainer/键盘/2" unique_id=1571357107 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "E2"
+num_key = 2
+note_key = "E"
+
+[node name="F2" parent="ScrollContainer/键盘/2" unique_id=1792571762 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "F2"
+num_key = 2
+note_key = "F"
+
+[node name="F#2" parent="ScrollContainer/键盘/2" unique_id=1386340591 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_mujii")
+text = "F#2"
+num_key = 2
+note_key = "F#"
+
+[node name="G2" parent="ScrollContainer/键盘/2" unique_id=1650556773 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "G2"
+num_key = 2
+note_key = "G"
+
+[node name="G#2" parent="ScrollContainer/键盘/2" unique_id=1110978877 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_mujii")
+text = "G#2"
+num_key = 2
+note_key = "G#"
+
+[node name="A2" parent="ScrollContainer/键盘/2" unique_id=261457983 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "A2"
+num_key = 2
+note_key = "A"
+
+[node name="A#2" parent="ScrollContainer/键盘/2" unique_id=1874667570 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_mujii")
+text = "A#2"
+num_key = 2
+note_key = "A#"
+
+[node name="B2" parent="ScrollContainer/键盘/2" unique_id=1628426346 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
+text = "B2"
+num_key = 2
+note_key = "B"
+
+[node name="3" type="VBoxContainer" parent="ScrollContainer/键盘" unique_id=1730311549]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="C3" parent="ScrollContainer/键盘/3" unique_id=1087679198 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "C3"
+num_key = 3
+
+[node name="C#3" parent="ScrollContainer/键盘/3" unique_id=1292215313 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tjqo")
+text = "C#3"
+num_key = 3
+note_key = "C#"
+
+[node name="D3" parent="ScrollContainer/键盘/3" unique_id=1836275466 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "D3"
+num_key = 3
+note_key = "D"
+
+[node name="D#3" parent="ScrollContainer/键盘/3" unique_id=311867688 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tjqo")
+text = "D#3"
+num_key = 3
+note_key = "D#"
+
+[node name="E3" parent="ScrollContainer/键盘/3" unique_id=678187979 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "E3"
+num_key = 3
+note_key = "E"
+
+[node name="F3" parent="ScrollContainer/键盘/3" unique_id=108092022 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "F3"
+num_key = 3
+note_key = "F"
+
+[node name="F#3" parent="ScrollContainer/键盘/3" unique_id=177392332 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tjqo")
+text = "F#3"
+num_key = 3
+note_key = "F#"
+
+[node name="G3" parent="ScrollContainer/键盘/3" unique_id=1535652961 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "G3"
+num_key = 3
+note_key = "G"
+
+[node name="G#3" parent="ScrollContainer/键盘/3" unique_id=2008250019 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tjqo")
+text = "G#3"
+num_key = 3
+note_key = "G#"
+
+[node name="A3" parent="ScrollContainer/键盘/3" unique_id=918139336 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "A3"
+num_key = 3
+note_key = "A"
+
+[node name="A#3" parent="ScrollContainer/键盘/3" unique_id=1436223537 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_1tjqo")
+text = "A#3"
+num_key = 3
+note_key = "A#"
+
+[node name="B3" parent="ScrollContainer/键盘/3" unique_id=1311147165 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
+text = "B3"
+num_key = 3
+note_key = "B"
+
+[node name="4" type="VBoxContainer" parent="ScrollContainer/键盘" unique_id=1584173349]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="C4" parent="ScrollContainer/键盘/4" unique_id=95692945 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "C4
+"
+
+[node name="C#4" parent="ScrollContainer/键盘/4" unique_id=288718710 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
+text = "C#4"
+note_key = "C#"
+
+[node name="D4" parent="ScrollContainer/键盘/4" unique_id=2132690724 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "D4"
+note_key = "D"
+
+[node name="D#4" parent="ScrollContainer/键盘/4" unique_id=365766257 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
+text = "D#4"
+note_key = "D#"
+
+[node name="E4" parent="ScrollContainer/键盘/4" unique_id=2131823063 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "E4"
+note_key = "E"
+
+[node name="F4" parent="ScrollContainer/键盘/4" unique_id=1891015328 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "F4"
+note_key = "F"
+
+[node name="F#4" parent="ScrollContainer/键盘/4" unique_id=38311421 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
+text = "F#4"
+note_key = "F#"
+
+[node name="G4" parent="ScrollContainer/键盘/4" unique_id=1375751559 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "G4"
+note_key = "G"
+
+[node name="G#4" parent="ScrollContainer/键盘/4" unique_id=2081317869 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
+text = "G#4"
+note_key = "G#"
+
+[node name="A4" parent="ScrollContainer/键盘/4" unique_id=1909473477 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "A4"
+note_key = "A"
+
+[node name="A#4" parent="ScrollContainer/键盘/4" unique_id=1298625121 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
+text = "A#4"
+note_key = "A#"
+
+[node name="B4" parent="ScrollContainer/键盘/4" unique_id=558909765 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
+text = "B4"
+note_key = "B"
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1577516277]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 198.0
+offset_right = 304.88892
+offset_bottom = 229.30435
+scale = Vector2(2.07, 2.07)
+value = 50.0
+script = ExtResource("3_v8t4v")
+
+[node name="Button" type="Button" parent="." unique_id=74392289]
+layout_mode = 0
+offset_left = 800.0
+offset_top = 176.0
+offset_right = 1149.0
+offset_bottom = 279.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_5cvgg")
+text = "退出"
+script = ExtResource("3_mujii")
+
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]
+[connection signal="button_up" from="Button" to="Button" method="_on_button_up"]

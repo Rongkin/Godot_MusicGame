@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://u281xdtyj5bo"]
+
+[ext_resource type="Script" uid="uid://d0jfypwcjx185" path="res://按键.gd" id="1_ih5i5"]
+[ext_resource type="AudioStream" uid="uid://crt2df83nbyhg" path="res://音频/Mf A4.wav" id="2_ih5i5"]
+[ext_resource type="AudioStream" uid="uid://cigjaqq2o86sp" path="res://音频/MF A1.wav" id="2_kmk3m"]
+[ext_resource type="AudioStream" uid="uid://b66cgk2sqojxl" path="res://音频/MF A2.wav" id="3_guyf6"]
+[ext_resource type="AudioStream" uid="uid://ba3omxesrwmfc" path="res://音频/MF A3.wav" id="4_hem1i"]
+
+[node name="Button" type="Button" unique_id=511395131]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 89
+text = "C4"
+script = ExtResource("1_ih5i5")
+
+[node name="A1" type="AudioStreamPlayer" parent="." unique_id=1291492360]
+stream = ExtResource("2_kmk3m")
+
+[node name="A2" type="AudioStreamPlayer" parent="." unique_id=1833052652]
+stream = ExtResource("3_guyf6")
+
+[node name="A3" type="AudioStreamPlayer" parent="." unique_id=1821066635]
+stream = ExtResource("4_hem1i")
+
+[node name="A4" type="AudioStreamPlayer" parent="." unique_id=1873081894]
+stream = ExtResource("2_ih5i5")
+volume_db = 1.1
+pitch_scale = 0.59460354
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

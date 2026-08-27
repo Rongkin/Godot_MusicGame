@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://o5604rqoanfx"]
+
+[ext_resource type="Script" uid="uid://dj3klkvkts8hy" path="res://按键_2.gd" id="1_n5g1u"]
+
+[node name="按键_2" type="Control" unique_id=1826975587]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
+script = ExtResource("1_n5g1u")
+x = 4
+
+[node name="Button" type="Button" parent="." unique_id=2034982771]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 216
+text = "test"

@@ -1,0 +1,140 @@
+[gd_scene format=3 uid="uid://bnngsgfguunv7"]
+
+[ext_resource type="PackedScene" uid="uid://u281xdtyj5bo" path="res://按键.tscn" id="3_105as"]
+[ext_resource type="Script" uid="uid://dkupgaqrb17ar" path="res://h_slider.gd" id="3_v8t4v"]
+
+[node name="Control" type="Control" unique_id=442082997]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1087840456]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="键盘" type="BoxContainer" parent="." unique_id=495979992]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 248.0
+offset_right = 1080.0
+offset_bottom = 400.0
+
+[node name="C3" parent="键盘" unique_id=511395131 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "C3
+"
+num_key = 3
+
+[node name="D3" parent="键盘" unique_id=1836275466 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "D3"
+num_key = 3
+note_key = "D"
+
+[node name="E3" parent="键盘" unique_id=678187979 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "E3
+
+"
+num_key = 3
+note_key = "E"
+
+[node name="F3" parent="键盘" unique_id=108092022 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "F3
+"
+num_key = 3
+note_key = "F"
+
+[node name="G3" parent="键盘" unique_id=1535652961 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "G3
+"
+num_key = 3
+note_key = "G"
+
+[node name="A3" parent="键盘" unique_id=918139336 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "A3"
+num_key = 3
+note_key = "A"
+
+[node name="B3" parent="键盘" unique_id=1311147165 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "B3
+"
+num_key = 3
+note_key = "B"
+
+[node name="C4" parent="键盘" unique_id=95692945 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "C4
+"
+
+[node name="D4" parent="键盘" unique_id=2132690724 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "D4
+"
+note_key = "D"
+
+[node name="E4" parent="键盘" unique_id=2131823063 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "E4
+"
+note_key = "E"
+
+[node name="F4" parent="键盘" unique_id=1891015328 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "F4
+"
+note_key = "F"
+
+[node name="G4" parent="键盘" unique_id=1375751559 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "G4
+"
+note_key = "G"
+
+[node name="A4" parent="键盘" unique_id=1909473477 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "A4
+"
+note_key = "A"
+
+[node name="B4" parent="键盘" unique_id=558909765 instance=ExtResource("3_105as")]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "B4
+"
+note_key = "B"
+
+[node name="HSlider" type="HSlider" parent="." unique_id=1577516277]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 64.0
+offset_right = 288.0
+offset_bottom = 80.0
+value = 30.0
+script = ExtResource("3_v8t4v")
+
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]
