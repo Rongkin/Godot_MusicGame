@@ -7,3 +7,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=677536457]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 112.0
+offset_right = 360.0
+offset_bottom = 224.0
+text = "test"
