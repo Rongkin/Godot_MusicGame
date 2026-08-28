@@ -109,23 +109,27 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 61.0
-offset_top = 338.0
-offset_right = -69.89502
-offset_bottom = -365.0
+offset_left = 43.0
+offset_top = 405.0
+offset_right = -32.0
+offset_bottom = -467.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="键盘" type="BoxContainer" parent="ScrollContainer" unique_id=495979992]
-layout_mode = 2
+[node name="键盘" type="BoxContainer" parent="." unique_id=495979992]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 405.0
+offset_right = 1180.0
+offset_bottom = 2544.0
 size_flags_horizontal = 3
 alignment = 1
 
-[node name="2" type="VBoxContainer" parent="ScrollContainer/键盘" unique_id=1848295760]
+[node name="2" type="VBoxContainer" parent="键盘" unique_id=1848295760]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C2" parent="ScrollContainer/键盘/2" unique_id=511395131 instance=ExtResource("3_105as")]
+[node name="C2" parent="键盘/2" unique_id=511395131 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -135,7 +139,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_105as")
 text = "C2"
 num_key = 2
 
-[node name="C#2" parent="ScrollContainer/键盘/2" unique_id=276647374 instance=ExtResource("3_105as")]
+[node name="C#2" parent="键盘/2" unique_id=276647374 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -146,7 +150,7 @@ text = "C#2"
 num_key = 2
 note_key = "C#"
 
-[node name="D2" parent="ScrollContainer/键盘/2" unique_id=1884950945 instance=ExtResource("3_105as")]
+[node name="D2" parent="键盘/2" unique_id=1884950945 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -157,7 +161,7 @@ text = "D2"
 num_key = 2
 note_key = "D"
 
-[node name="D#2" parent="ScrollContainer/键盘/2" unique_id=1773655639 instance=ExtResource("3_105as")]
+[node name="D#2" parent="键盘/2" unique_id=1773655639 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -168,7 +172,7 @@ text = "D#2"
 num_key = 2
 note_key = "D#"
 
-[node name="E2" parent="ScrollContainer/键盘/2" unique_id=1571357107 instance=ExtResource("3_105as")]
+[node name="E2" parent="键盘/2" unique_id=1571357107 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -179,7 +183,7 @@ text = "E2"
 num_key = 2
 note_key = "E"
 
-[node name="F2" parent="ScrollContainer/键盘/2" unique_id=1792571762 instance=ExtResource("3_105as")]
+[node name="F2" parent="键盘/2" unique_id=1792571762 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -190,7 +194,7 @@ text = "F2"
 num_key = 2
 note_key = "F"
 
-[node name="F#2" parent="ScrollContainer/键盘/2" unique_id=1386340591 instance=ExtResource("3_105as")]
+[node name="F#2" parent="键盘/2" unique_id=1386340591 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -201,7 +205,7 @@ text = "F#2"
 num_key = 2
 note_key = "F#"
 
-[node name="G2" parent="ScrollContainer/键盘/2" unique_id=1650556773 instance=ExtResource("3_105as")]
+[node name="G2" parent="键盘/2" unique_id=1650556773 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -212,7 +216,7 @@ text = "G2"
 num_key = 2
 note_key = "G"
 
-[node name="G#2" parent="ScrollContainer/键盘/2" unique_id=1110978877 instance=ExtResource("3_105as")]
+[node name="G#2" parent="键盘/2" unique_id=1110978877 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -223,7 +227,7 @@ text = "G#2"
 num_key = 2
 note_key = "G#"
 
-[node name="A2" parent="ScrollContainer/键盘/2" unique_id=261457983 instance=ExtResource("3_105as")]
+[node name="A2" parent="键盘/2" unique_id=261457983 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -234,7 +238,7 @@ text = "A2"
 num_key = 2
 note_key = "A"
 
-[node name="A#2" parent="ScrollContainer/键盘/2" unique_id=1874667570 instance=ExtResource("3_105as")]
+[node name="A#2" parent="键盘/2" unique_id=1874667570 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -245,7 +249,7 @@ text = "A#2"
 num_key = 2
 note_key = "A#"
 
-[node name="B2" parent="ScrollContainer/键盘/2" unique_id=1628426346 instance=ExtResource("3_105as")]
+[node name="B2" parent="键盘/2" unique_id=1628426346 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -256,11 +260,11 @@ text = "B2"
 num_key = 2
 note_key = "B"
 
-[node name="3" type="VBoxContainer" parent="ScrollContainer/键盘" unique_id=1730311549]
+[node name="3" type="VBoxContainer" parent="键盘" unique_id=1730311549]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C3" parent="ScrollContainer/键盘/3" unique_id=1087679198 instance=ExtResource("3_105as")]
+[node name="C3" parent="键盘/3" unique_id=1087679198 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -270,7 +274,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_v8t4v")
 text = "C3"
 num_key = 3
 
-[node name="C#3" parent="ScrollContainer/键盘/3" unique_id=1292215313 instance=ExtResource("3_105as")]
+[node name="C#3" parent="键盘/3" unique_id=1292215313 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -281,7 +285,7 @@ text = "C#3"
 num_key = 3
 note_key = "C#"
 
-[node name="D3" parent="ScrollContainer/键盘/3" unique_id=1836275466 instance=ExtResource("3_105as")]
+[node name="D3" parent="键盘/3" unique_id=1836275466 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -292,7 +296,7 @@ text = "D3"
 num_key = 3
 note_key = "D"
 
-[node name="D#3" parent="ScrollContainer/键盘/3" unique_id=311867688 instance=ExtResource("3_105as")]
+[node name="D#3" parent="键盘/3" unique_id=311867688 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -303,7 +307,7 @@ text = "D#3"
 num_key = 3
 note_key = "D#"
 
-[node name="E3" parent="ScrollContainer/键盘/3" unique_id=678187979 instance=ExtResource("3_105as")]
+[node name="E3" parent="键盘/3" unique_id=678187979 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -314,7 +318,7 @@ text = "E3"
 num_key = 3
 note_key = "E"
 
-[node name="F3" parent="ScrollContainer/键盘/3" unique_id=108092022 instance=ExtResource("3_105as")]
+[node name="F3" parent="键盘/3" unique_id=108092022 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -325,7 +329,7 @@ text = "F3"
 num_key = 3
 note_key = "F"
 
-[node name="F#3" parent="ScrollContainer/键盘/3" unique_id=177392332 instance=ExtResource("3_105as")]
+[node name="F#3" parent="键盘/3" unique_id=177392332 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -336,7 +340,7 @@ text = "F#3"
 num_key = 3
 note_key = "F#"
 
-[node name="G3" parent="ScrollContainer/键盘/3" unique_id=1535652961 instance=ExtResource("3_105as")]
+[node name="G3" parent="键盘/3" unique_id=1535652961 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -347,7 +351,7 @@ text = "G3"
 num_key = 3
 note_key = "G"
 
-[node name="G#3" parent="ScrollContainer/键盘/3" unique_id=2008250019 instance=ExtResource("3_105as")]
+[node name="G#3" parent="键盘/3" unique_id=2008250019 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -358,7 +362,7 @@ text = "G#3"
 num_key = 3
 note_key = "G#"
 
-[node name="A3" parent="ScrollContainer/键盘/3" unique_id=918139336 instance=ExtResource("3_105as")]
+[node name="A3" parent="键盘/3" unique_id=918139336 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -369,7 +373,7 @@ text = "A3"
 num_key = 3
 note_key = "A"
 
-[node name="A#3" parent="ScrollContainer/键盘/3" unique_id=1436223537 instance=ExtResource("3_105as")]
+[node name="A#3" parent="键盘/3" unique_id=1436223537 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -380,7 +384,7 @@ text = "A#3"
 num_key = 3
 note_key = "A#"
 
-[node name="B3" parent="ScrollContainer/键盘/3" unique_id=1311147165 instance=ExtResource("3_105as")]
+[node name="B3" parent="键盘/3" unique_id=1311147165 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -391,11 +395,11 @@ text = "B3"
 num_key = 3
 note_key = "B"
 
-[node name="4" type="VBoxContainer" parent="ScrollContainer/键盘" unique_id=1584173349]
+[node name="4" type="VBoxContainer" parent="键盘" unique_id=1584173349]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="C4" parent="ScrollContainer/键盘/4" unique_id=95692945 instance=ExtResource("3_105as")]
+[node name="C4" parent="键盘/4" unique_id=95692945 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -404,7 +408,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
 text = "C4
 "
 
-[node name="C#4" parent="ScrollContainer/键盘/4" unique_id=288718710 instance=ExtResource("3_105as")]
+[node name="C#4" parent="键盘/4" unique_id=288718710 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -414,7 +418,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
 text = "C#4"
 note_key = "C#"
 
-[node name="D4" parent="ScrollContainer/键盘/4" unique_id=2132690724 instance=ExtResource("3_105as")]
+[node name="D4" parent="键盘/4" unique_id=2132690724 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -423,7 +427,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
 text = "D4"
 note_key = "D"
 
-[node name="D#4" parent="ScrollContainer/键盘/4" unique_id=365766257 instance=ExtResource("3_105as")]
+[node name="D#4" parent="键盘/4" unique_id=365766257 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -433,7 +437,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
 text = "D#4"
 note_key = "D#"
 
-[node name="E4" parent="ScrollContainer/键盘/4" unique_id=2131823063 instance=ExtResource("3_105as")]
+[node name="E4" parent="键盘/4" unique_id=2131823063 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -442,7 +446,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
 text = "E4"
 note_key = "E"
 
-[node name="F4" parent="ScrollContainer/键盘/4" unique_id=1891015328 instance=ExtResource("3_105as")]
+[node name="F4" parent="键盘/4" unique_id=1891015328 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -451,7 +455,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
 text = "F4"
 note_key = "F"
 
-[node name="F#4" parent="ScrollContainer/键盘/4" unique_id=38311421 instance=ExtResource("3_105as")]
+[node name="F#4" parent="键盘/4" unique_id=38311421 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -461,7 +465,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
 text = "F#4"
 note_key = "F#"
 
-[node name="G4" parent="ScrollContainer/键盘/4" unique_id=1375751559 instance=ExtResource("3_105as")]
+[node name="G4" parent="键盘/4" unique_id=1375751559 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -470,7 +474,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
 text = "G4"
 note_key = "G"
 
-[node name="G#4" parent="ScrollContainer/键盘/4" unique_id=2081317869 instance=ExtResource("3_105as")]
+[node name="G#4" parent="键盘/4" unique_id=2081317869 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -480,7 +484,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
 text = "G#4"
 note_key = "G#"
 
-[node name="A4" parent="ScrollContainer/键盘/4" unique_id=1909473477 instance=ExtResource("3_105as")]
+[node name="A4" parent="键盘/4" unique_id=1909473477 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -489,7 +493,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fpmlh")
 text = "A4"
 note_key = "A"
 
-[node name="A#4" parent="ScrollContainer/键盘/4" unique_id=1298625121 instance=ExtResource("3_105as")]
+[node name="A#4" parent="键盘/4" unique_id=1298625121 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -499,7 +503,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_qhron")
 text = "A#4"
 note_key = "A#"
 
-[node name="B4" parent="ScrollContainer/键盘/4" unique_id=558909765 instance=ExtResource("3_105as")]
+[node name="B4" parent="键盘/4" unique_id=558909765 instance=ExtResource("3_105as")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3

@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://u281xdtyj5bo"]
 
 [ext_resource type="Script" uid="uid://d0jfypwcjx185" path="res://按键.gd" id="1_ih5i5"]
-[ext_resource type="AudioStream" uid="uid://crt2df83nbyhg" path="res://音频/Mf A4.wav" id="2_ih5i5"]
 [ext_resource type="AudioStream" uid="uid://cigjaqq2o86sp" path="res://音频/MF A1.wav" id="2_kmk3m"]
 [ext_resource type="AudioStream" uid="uid://b66cgk2sqojxl" path="res://音频/MF A2.wav" id="3_guyf6"]
 [ext_resource type="AudioStream" uid="uid://ba3omxesrwmfc" path="res://音频/MF A3.wav" id="4_hem1i"]
+[ext_resource type="AudioStream" uid="uid://djmspqmwq38ff" path="res://音频/Mf A5.wav" id="5_guyf6"]
+[ext_resource type="AudioStream" uid="uid://b6idfy0h7fy75" path="res://音频/Mf A6.wav" id="6_hem1i"]
 
 [node name="Button" type="Button" unique_id=511395131]
 anchors_preset = 15
@@ -26,9 +27,15 @@ stream = ExtResource("3_guyf6")
 stream = ExtResource("4_hem1i")
 
 [node name="A4" type="AudioStreamPlayer" parent="." unique_id=1873081894]
-stream = ExtResource("2_ih5i5")
-volume_db = 1.1
+stream = ExtResource("5_guyf6")
+volume_db = 1.15
 pitch_scale = 0.59460354
+
+[node name="A5" type="AudioStreamPlayer" parent="." unique_id=729984660]
+stream = ExtResource("5_guyf6")
+
+[node name="A6" type="AudioStreamPlayer" parent="." unique_id=163852274]
+stream = ExtResource("6_hem1i")
 
 [connection signal="button_down" from="." to="." method="_on_button_down"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
