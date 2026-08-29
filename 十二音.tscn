@@ -1,17 +1,18 @@
 [gd_scene format=3 uid="uid://hnmfhu2c7025"]
 
-[ext_resource type="PackedScene" uid="uid://u281xdtyj5bo" path="res://按键.tscn" id="1_75p7a"]
+[ext_resource type="PackedScene" uid="uid://u281xdtyj5bo" path="res://按键.tscn" id="1_83xb2"]
+[ext_resource type="Script" uid="uid://bpkkn5qnni212" path="res://十二音.gd" id="1_v0jgy"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adcuk"]
 content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.9, 0.444, 0.17999998, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+bg_color = Color(0.48000002, 0.16, 0.8, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 corner_detail = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1t811"]
@@ -19,30 +20,24 @@ content_margin_left = 4.0
 content_margin_top = 4.0
 content_margin_right = 4.0
 content_margin_bottom = 4.0
-bg_color = Color(0.6, 0.48600003, 0.42000002, 0.39215687)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+bg_color = Color(0.71999997, 0.64000005, 0.8, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
 corner_detail = 5
 
-[node name="Control" type="Control" unique_id=105259304]
+[node name="十二音" type="Control" unique_id=105259304]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_v0jgy")
+num_key = 6
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=91240564]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="2" type="VBoxContainer" parent="." unique_id=1595343848]
+[node name="组" type="VBoxContainer" parent="." unique_id=1595343848]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -51,133 +46,133 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 
-[node name="C2" parent="2" unique_id=511395131 instance=ExtResource("1_75p7a")]
+[node name="C" parent="组" unique_id=511395131 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "C2"
-num_key = 2
+text = "C6"
+num_key = 6
 
-[node name="C#2" parent="2" unique_id=1708802048 instance=ExtResource("1_75p7a")]
+[node name="C#" parent="组" unique_id=1708802048 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_1t811")
-text = "C#2"
-num_key = 2
+text = "C#6"
+num_key = 6
 note_key = "C#"
 
-[node name="D2" parent="2" unique_id=1940299261 instance=ExtResource("1_75p7a")]
+[node name="D" parent="组" unique_id=1940299261 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "D2"
-num_key = 2
+text = "D6"
+num_key = 6
 note_key = "D"
 
-[node name="D#2" parent="2" unique_id=736409662 instance=ExtResource("1_75p7a")]
+[node name="D#" parent="组" unique_id=736409662 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_1t811")
-text = "D#2"
-num_key = 2
+text = "D#6"
+num_key = 6
 note_key = "D#"
 
-[node name="E2" parent="2" unique_id=1169635377 instance=ExtResource("1_75p7a")]
+[node name="E" parent="组" unique_id=1169635377 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "E2"
-num_key = 2
+text = "E6"
+num_key = 6
 note_key = "E"
 
-[node name="F2" parent="2" unique_id=1303174953 instance=ExtResource("1_75p7a")]
+[node name="F" parent="组" unique_id=1303174953 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "F2"
-num_key = 2
+text = "F6"
+num_key = 6
 note_key = "F"
 
-[node name="F#2" parent="2" unique_id=545570740 instance=ExtResource("1_75p7a")]
+[node name="F#" parent="组" unique_id=545570740 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_1t811")
-text = "F#2"
-num_key = 2
+text = "F#6"
+num_key = 6
 note_key = "F#"
 
-[node name="G2" parent="2" unique_id=509520827 instance=ExtResource("1_75p7a")]
+[node name="G" parent="组" unique_id=509520827 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "G2"
-num_key = 2
+text = "G6"
+num_key = 6
 note_key = "G"
 
-[node name="G#2" parent="2" unique_id=972827008 instance=ExtResource("1_75p7a")]
+[node name="G#" parent="组" unique_id=972827008 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_1t811")
-text = "G#2"
-num_key = 2
+text = "G#6"
+num_key = 6
 note_key = "G#"
 
-[node name="A2" parent="2" unique_id=510387753 instance=ExtResource("1_75p7a")]
+[node name="A" parent="组" unique_id=510387753 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "A2"
-num_key = 2
+text = "A6"
+num_key = 6
 note_key = "A"
 
-[node name="A#2" parent="2" unique_id=673655161 instance=ExtResource("1_75p7a")]
+[node name="A#" parent="组" unique_id=673655161 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_1t811")
-text = "A#2"
-num_key = 2
+text = "A#6"
+num_key = 6
 note_key = "A#"
 
-[node name="B2" parent="2" unique_id=1630569044 instance=ExtResource("1_75p7a")]
+[node name="B" parent="组" unique_id=1630569044 instance=ExtResource("1_83xb2")]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 60
 theme_override_styles/normal = SubResource("StyleBoxFlat_adcuk")
-text = "B2"
-num_key = 2
+text = "B6"
+num_key = 6
 note_key = "B"

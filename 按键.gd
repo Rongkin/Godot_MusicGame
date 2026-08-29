@@ -1,10 +1,12 @@
 @tool
 extends Button
 
-@export var num_key = 4:
+#自定义属性
+@export_range(1, 6, 1) var num_key = 4:
 	set(value):
 		num_key = value
 		self.text = note_key + str(num_key)
+		按键颜色()
 
 #@export var note_key = "C"
 @export_enum("C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B")
@@ -12,8 +14,6 @@ var note_key := "C":
 	set(value):
 		note_key = value
 		self.text = note_key + str(num_key)
-
-
 
 
 #音域
@@ -43,34 +43,34 @@ func 音频偏移(num_vale, note_vale):
 	num_node.pitch_scale = pow(2.0, (note_vale - 9) / 12.0)
 	
 
+#点击按钮
 func _on_button_down() -> void:
-	音频偏移(num_vale, note_vale)
 	var num_node = get_node(num_vale)
-	#print(num_node.pitch_scale)
 	num_node.play()
 
 func _ready() -> void:
 	num_vale = num_dict[num_key]
 	note_vale = note_dict[note_key]
 	音频偏移(num_vale, note_vale)
+	按键颜色()
 
 
 const 音频_键位 = {
-	"C" : [0,"C2", "C3", "C4"],
-	"C#": [0,"C#2", "C#3", "C#4"],
-	"D" : [0,"D2", "D3", "D4"],
-	"D#" : [0,"D#2", "D#3", "D#4"],
-	"E" : [0,"E2", "E3", "E4"],
-	"F" : [0,"F2", "F3", "F4"],
-	"F#" : [0,"F#2", "F#3", "F#4"],
-	"G" : [0,"G2", "G3", "G4"],
-	"G#" : [0,"G#2", "G#3", "G#4"],
-	"A" : [0,"A2", "A3", "A4"],
-	"A#" : [0,"A#2", "A#3", "A#4"],
-	"B" : [0,"B2", "B3", "B4"],
+	"C" : [0,"C2", "C3", "C4","","",""],
+	"C#": [0,"C#2", "C#3", "C#4","","",""],
+	"D" : [0,"D2", "D3", "D4","","",""],
+	"D#" : [0,"D#2", "D#3", "D#4","","",""],
+	"E" : [0,"E2", "E3", "E4","","",""],
+	"F" : [0,"F2", "F3", "F4","","",""],
+	"F#" : [0,"F#2", "F#3", "F#4","","",""],
+	"G" : [0,"G2", "G3", "G4","","",""],
+	"G#" : [0,"G#2", "G#3", "G#4","","",""],
+	"A" : [0,"A2", "A3", "A4","","",""],
+	"A#" : [0,"A#2", "A#3", "A#4","","",""],
+	"B" : [0,"B2", "B3", "B4","","",""],
 }
 
-var 鼠标进入 = false
+#键盘控制
 func _input(event):
 	if event.is_action_pressed(音频_键位[note_key][num_key - 1]):
 		print(note_key+str(num_key))
@@ -80,19 +80,14 @@ func _input(event):
 	if event.is_action_released(音频_键位[note_key][num_key - 1]):
 		toggle_mode = false
 		button_pressed = false
-	#if event is InputEventMouseMotion:
-		#if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
-			#var num_node = get_node(num_vale)
-			#if 鼠标进入 == true and num_node.playing == false:
-				#_on_button_down()
-				#print("按下"+note_key+str(num_key))
-			#if 鼠标进入 == false and num_node.playing == true:
-				#num_node.playing = false
-	
 
-func _on_mouse_entered() -> void:
-	鼠标进入 = true
-	
-
-func _on_mouse_exited() -> void:
-	鼠标进入 = false
+func 按键颜色():
+	var style = get_theme_stylebox("normal")
+	if "#" in note_key: 
+		style.bg_color = Color.from_hsv(num_key/8.0, 0.2, 0.8)
+	else:
+		style.bg_color = Color.from_hsv(num_key/8.0, 0.8, 0.8)
+	style.corner_radius_top_left = 30
+	style.corner_radius_top_right = 30
+	style.corner_radius_bottom_left = 30
+	style.corner_radius_bottom_right = 30
