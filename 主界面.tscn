@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://bnngsgfguunv7"]
 
 [ext_resource type="PackedScene" uid="uid://u281xdtyj5bo" path="res://按键.tscn" id="1_hl2lk"]
+[ext_resource type="Script" uid="uid://bpkkn5qnni212" path="res://十二音.gd" id="1_xea0e"]
+[ext_resource type="PackedScene" uid="uid://hnmfhu2c7025" path="res://十二音.tscn" id="2_nmrbq"]
 [ext_resource type="Script" uid="uid://dkupgaqrb17ar" path="res://h_slider.gd" id="2_roi7n"]
 [ext_resource type="Script" uid="uid://cqoc63ip2wgq7" path="res://退出.gd" id="3_xea0e"]
 
@@ -118,14 +120,41 @@ grow_vertical = 2
 
 [node name="键盘" type="BoxContainer" parent="." unique_id=495979992]
 layout_mode = 0
-offset_left = 43.0
-offset_top = 405.0
-offset_right = 1180.0
-offset_bottom = 2544.0
+offset_left = 23.0
+offset_top = 400.0
+offset_right = 1200.0
+offset_bottom = 2488.0
 size_flags_horizontal = 3
 alignment = 1
+script = ExtResource("1_xea0e")
+
+[node name="十二音" parent="键盘" unique_id=105259304 instance=ExtResource("2_nmrbq")]
+layout_mode = 2
+size_flags_horizontal = 3
+num_key = 1
+
+[node name="十二音2" parent="键盘" unique_id=1221473206 instance=ExtResource("2_nmrbq")]
+layout_mode = 2
+size_flags_horizontal = 3
+num_key = 2
+
+[node name="十二音3" parent="键盘" unique_id=1802076786 instance=ExtResource("2_nmrbq")]
+layout_mode = 2
+size_flags_horizontal = 3
+num_key = 3
+
+[node name="十二音4" parent="键盘" unique_id=1663178881 instance=ExtResource("2_nmrbq")]
+layout_mode = 2
+size_flags_horizontal = 3
+num_key = 4
+
+[node name="十二音5" parent="键盘" unique_id=514589606 instance=ExtResource("2_nmrbq")]
+layout_mode = 2
+size_flags_horizontal = 3
+num_key = 5
 
 [node name="2" type="VBoxContainer" parent="键盘" unique_id=1848295760]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -261,6 +290,7 @@ num_key = 2
 note_key = "B"
 
 [node name="3" type="VBoxContainer" parent="键盘" unique_id=1730311549]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -396,6 +426,7 @@ num_key = 3
 note_key = "B"
 
 [node name="4" type="VBoxContainer" parent="键盘" unique_id=1584173349]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 
