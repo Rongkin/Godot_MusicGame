@@ -5,7 +5,20 @@
 [ext_resource type="AudioStream" uid="uid://b66cgk2sqojxl" path="res://音频/MF A2.wav" id="3_guyf6"]
 [ext_resource type="AudioStream" uid="uid://ba3omxesrwmfc" path="res://音频/MF A3.wav" id="4_hem1i"]
 [ext_resource type="AudioStream" uid="uid://djmspqmwq38ff" path="res://音频/Mf A5.wav" id="5_guyf6"]
+[ext_resource type="AudioStream" uid="uid://crt2df83nbyhg" path="res://音频/Mf A4.wav" id="5_hem1i"]
 [ext_resource type="AudioStream" uid="uid://b6idfy0h7fy75" path="res://音频/Mf A6.wav" id="6_hem1i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2s2jv"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.16, 0.8, 0.8, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+corner_detail = 5
 
 [node name="Button" type="Button" unique_id=511395131]
 anchors_preset = 15
@@ -14,6 +27,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 89
+theme_override_styles/normal = SubResource("StyleBoxFlat_2s2jv")
 text = "C4"
 script = ExtResource("1_ih5i5")
 
@@ -27,7 +41,7 @@ stream = ExtResource("3_guyf6")
 stream = ExtResource("4_hem1i")
 
 [node name="A4" type="AudioStreamPlayer" parent="." unique_id=1873081894]
-stream = ExtResource("5_guyf6")
+stream = ExtResource("5_hem1i")
 volume_db = 1.15
 pitch_scale = 0.59460354
 
