@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://bsqf7gab4sjho"]
+
+[ext_resource type="PackedScene" uid="uid://hnmfhu2c7025" path="res://十二音.tscn" id="1_1yjak"]
+
+[node name="六组十二音" type="Control" unique_id=454251683]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 9453.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=549139844]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="十二音" parent="VBoxContainer" unique_id=105259304 instance=ExtResource("1_1yjak")]
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+num_key = 1
+
+[node name="十二音2" parent="VBoxContainer" unique_id=933800588 instance=ExtResource("1_1yjak")]
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+num_key = 2
+
+[node name="十二音3" parent="VBoxContainer" unique_id=1485590626 instance=ExtResource("1_1yjak")]
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+num_key = 3
+
+[node name="十二音4" parent="VBoxContainer" unique_id=923857829 instance=ExtResource("1_1yjak")]
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+num_key = 4
+
+[node name="十二音5" parent="VBoxContainer" unique_id=379311700 instance=ExtResource("1_1yjak")]
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
+num_key = 5
+
+[node name="十二音6" parent="VBoxContainer" unique_id=1464874061 instance=ExtResource("1_1yjak")]
+custom_minimum_size = Vector2(0, 2000)
+layout_mode = 2
