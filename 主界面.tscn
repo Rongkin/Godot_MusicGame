@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://hnmfhu2c7025" path="res://十二音.tscn" id="2_nmrbq"]
 [ext_resource type="Script" uid="uid://dkupgaqrb17ar" path="res://h_slider.gd" id="2_roi7n"]
-[ext_resource type="PackedScene" uid="uid://bsqf7gab4sjho" path="res://六组十二音.tscn" id="2_xea0e"]
 [ext_resource type="Script" uid="uid://cqoc63ip2wgq7" path="res://退出.gd" id="3_xea0e"]
+[ext_resource type="PackedScene" uid="uid://c4uon5b3i6vau" path="res://布局1.tscn" id="4_roi7n"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5cvgg"]
 content_margin_left = 4.0
@@ -32,71 +32,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1694617118]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 47.0
-offset_top = 415.0
-offset_right = -38.0
-offset_bottom = -147.0
-grow_horizontal = 2
-grow_vertical = 2
-scroll_vertical = 10006
-
-[node name="键盘2" type="BoxContainer" parent="ScrollContainer" unique_id=1229903785]
-layout_mode = 2
-size_flags_horizontal = 3
-alignment = 1
-
-[node name="六组十二音" parent="ScrollContainer/键盘2" unique_id=454251683 instance=ExtResource("2_xea0e")]
-custom_minimum_size = Vector2(0, 12100)
-layout_mode = 2
-size_flags_horizontal = 3
-offset_transform_enabled = true
-offset_transform_position = Vector2(0, 10000)
-offset_transform_visual_only = false
-
-[node name="六组十二音2" parent="ScrollContainer/键盘2" unique_id=406837360 instance=ExtResource("2_xea0e")]
-custom_minimum_size = Vector2(0, 12100)
-layout_mode = 2
-size_flags_horizontal = 3
-offset_transform_enabled = true
-offset_transform_position = Vector2(0, 8000)
-offset_transform_visual_only = false
-
-[node name="六组十二音3" parent="ScrollContainer/键盘2" unique_id=1462420188 instance=ExtResource("2_xea0e")]
-custom_minimum_size = Vector2(0, 12100)
-layout_mode = 2
-size_flags_horizontal = 3
-offset_transform_enabled = true
-offset_transform_position = Vector2(0, 6000)
-offset_transform_visual_only = false
-
-[node name="六组十二音4" parent="ScrollContainer/键盘2" unique_id=480429037 instance=ExtResource("2_xea0e")]
-custom_minimum_size = Vector2(0, 12100)
-layout_mode = 2
-size_flags_horizontal = 3
-offset_transform_enabled = true
-offset_transform_position = Vector2(0, 4000)
-offset_transform_visual_only = false
-
-[node name="六组十二音5" parent="ScrollContainer/键盘2" unique_id=1631513679 instance=ExtResource("2_xea0e")]
-custom_minimum_size = Vector2(0, 12100)
-layout_mode = 2
-size_flags_horizontal = 3
-offset_transform_enabled = true
-offset_transform_position = Vector2(0, 2000)
-offset_transform_visual_only = false
-
-[node name="六组十二音6" parent="ScrollContainer/键盘2" unique_id=1920849451 instance=ExtResource("2_xea0e")]
-custom_minimum_size = Vector2(0, 12100)
-layout_mode = 2
-size_flags_horizontal = 3
-offset_transform_enabled = true
-offset_transform_visual_only = false
 
 [node name="键盘" type="BoxContainer" parent="." unique_id=495979992]
 visible = false
@@ -157,6 +92,13 @@ theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_5cvgg")
 text = "退出"
 script = ExtResource("3_xea0e")
+
+[node name="布局1" parent="." unique_id=99292612 instance=ExtResource("4_roi7n")]
+layout_mode = 1
+offset_left = 76.0
+offset_top = 358.0
+offset_right = -76.0
+offset_bottom = -101.0
 
 [connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]
 [connection signal="button_up" from="Button" to="Button" method="_on_button_up"]
