@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://benhonhr7l5sf"]
+
+[ext_resource type="Script" uid="uid://cldxeqa02jmdh" path="res://自定义音条.gd" id="1_efem1"]
+
+[node name="自定义音条" type="Control" unique_id=271219351]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_efem1")
+begin_num = 29
+end_num = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=276720161]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[connection signal="button_down" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Button" to="VBoxContainer/Button" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229006" to="VBoxContainer/@Button@229006" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229006" to="VBoxContainer/@Button@229006" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229006" to="VBoxContainer/@Button@229006" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229007" to="VBoxContainer/@Button@229007" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229007" to="VBoxContainer/@Button@229007" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229007" to="VBoxContainer/@Button@229007" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229008" to="VBoxContainer/@Button@229008" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229008" to="VBoxContainer/@Button@229008" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229008" to="VBoxContainer/@Button@229008" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229009" to="VBoxContainer/@Button@229009" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229009" to="VBoxContainer/@Button@229009" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229009" to="VBoxContainer/@Button@229009" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229010" to="VBoxContainer/@Button@229010" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229010" to="VBoxContainer/@Button@229010" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229010" to="VBoxContainer/@Button@229010" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229011" to="VBoxContainer/@Button@229011" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229011" to="VBoxContainer/@Button@229011" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229011" to="VBoxContainer/@Button@229011" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229012" to="VBoxContainer/@Button@229012" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229012" to="VBoxContainer/@Button@229012" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229012" to="VBoxContainer/@Button@229012" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229013" to="VBoxContainer/@Button@229013" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229013" to="VBoxContainer/@Button@229013" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229013" to="VBoxContainer/@Button@229013" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229014" to="VBoxContainer/@Button@229014" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229014" to="VBoxContainer/@Button@229014" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229014" to="VBoxContainer/@Button@229014" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229015" to="VBoxContainer/@Button@229015" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229015" to="VBoxContainer/@Button@229015" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229015" to="VBoxContainer/@Button@229015" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229016" to="VBoxContainer/@Button@229016" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229016" to="VBoxContainer/@Button@229016" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229016" to="VBoxContainer/@Button@229016" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229017" to="VBoxContainer/@Button@229017" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229017" to="VBoxContainer/@Button@229017" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229017" to="VBoxContainer/@Button@229017" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229018" to="VBoxContainer/@Button@229018" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229018" to="VBoxContainer/@Button@229018" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229018" to="VBoxContainer/@Button@229018" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229019" to="VBoxContainer/@Button@229019" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229019" to="VBoxContainer/@Button@229019" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229019" to="VBoxContainer/@Button@229019" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229020" to="VBoxContainer/@Button@229020" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229020" to="VBoxContainer/@Button@229020" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229020" to="VBoxContainer/@Button@229020" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229021" to="VBoxContainer/@Button@229021" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229021" to="VBoxContainer/@Button@229021" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229021" to="VBoxContainer/@Button@229021" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229022" to="VBoxContainer/@Button@229022" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229022" to="VBoxContainer/@Button@229022" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229022" to="VBoxContainer/@Button@229022" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229023" to="VBoxContainer/@Button@229023" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229023" to="VBoxContainer/@Button@229023" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229023" to="VBoxContainer/@Button@229023" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229024" to="VBoxContainer/@Button@229024" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229024" to="VBoxContainer/@Button@229024" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229024" to="VBoxContainer/@Button@229024" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229025" to="VBoxContainer/@Button@229025" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229025" to="VBoxContainer/@Button@229025" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229025" to="VBoxContainer/@Button@229025" method="_on_mouse_exited"]
+[connection signal="button_down" from="VBoxContainer/@Button@229026" to="VBoxContainer/@Button@229026" method="_on_button_down"]
+[connection signal="mouse_entered" from="VBoxContainer/@Button@229026" to="VBoxContainer/@Button@229026" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/@Button@229026" to="VBoxContainer/@Button@229026" method="_on_mouse_exited"]

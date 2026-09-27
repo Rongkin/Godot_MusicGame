@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://drenum802234c"]
+
+[ext_resource type="PackedScene" uid="uid://benhonhr7l5sf" path="res://自定义音条.tscn" id="1_tgnms"]
+
+[node name="布局1" type="Control" unique_id=99292612]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1461801238]
+clip_contents = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer" unique_id=1458275110]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="自定义音条" parent="ScrollContainer/HBoxContainer" unique_id=271219351 instance=ExtResource("1_tgnms")]
+layout_mode = 2
+begin_num = 0
+end_num = 11
+
+[node name="自定义音条2" parent="ScrollContainer/HBoxContainer" unique_id=1137215479 instance=ExtResource("1_tgnms")]
+layout_mode = 2
+begin_num = 12
+end_num = 23
+
+[node name="自定义音条3" parent="ScrollContainer/HBoxContainer" unique_id=2068199765 instance=ExtResource("1_tgnms")]
+layout_mode = 2
+begin_num = 24
+end_num = 35
+
+[node name="自定义音条4" parent="ScrollContainer/HBoxContainer" unique_id=432151332 instance=ExtResource("1_tgnms")]
+layout_mode = 2
+begin_num = 36
+end_num = 47
+
+[node name="自定义音条5" parent="ScrollContainer/HBoxContainer" unique_id=1731916783 instance=ExtResource("1_tgnms")]
+layout_mode = 2
+begin_num = 48
+end_num = 59
+
+[node name="自定义音条6" parent="ScrollContainer/HBoxContainer" unique_id=1575654658 instance=ExtResource("1_tgnms")]
+layout_mode = 2
+begin_num = 60
+end_num = 71

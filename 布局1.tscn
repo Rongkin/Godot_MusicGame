@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c4uon5b3i6vau"]
 
+[ext_resource type="PackedScene" uid="uid://benhonhr7l5sf" path="res://自定义音条.tscn" id="1_0njt8"]
+
 [node name="布局1" type="Control" unique_id=99292612]
 layout_mode = 3
 anchors_preset = 15
@@ -20,3 +22,33 @@ grow_vertical = 2
 [node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer" unique_id=1458275110]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="自定义音条" parent="ScrollContainer/HBoxContainer" unique_id=271219351 instance=ExtResource("1_0njt8")]
+layout_mode = 2
+begin_num = 16
+end_num = 31
+
+[node name="自定义音条2" parent="ScrollContainer/HBoxContainer" unique_id=1137215479 instance=ExtResource("1_0njt8")]
+layout_mode = 2
+begin_num = 21
+end_num = 36
+
+[node name="自定义音条3" parent="ScrollContainer/HBoxContainer" unique_id=2068199765 instance=ExtResource("1_0njt8")]
+layout_mode = 2
+begin_num = 26
+end_num = 41
+
+[node name="自定义音条4" parent="ScrollContainer/HBoxContainer" unique_id=432151332 instance=ExtResource("1_0njt8")]
+layout_mode = 2
+begin_num = 31
+end_num = 46
+
+[node name="自定义音条5" parent="ScrollContainer/HBoxContainer" unique_id=1731916783 instance=ExtResource("1_0njt8")]
+layout_mode = 2
+begin_num = 35
+
+[node name="自定义音条6" parent="ScrollContainer/HBoxContainer" unique_id=1575654658 instance=ExtResource("1_0njt8")]
+layout_mode = 2
+begin_num = 40
+end_num = 55

@@ -3,7 +3,10 @@
 [ext_resource type="PackedScene" uid="uid://hnmfhu2c7025" path="res://十二音.tscn" id="2_nmrbq"]
 [ext_resource type="Script" uid="uid://dkupgaqrb17ar" path="res://h_slider.gd" id="2_roi7n"]
 [ext_resource type="Script" uid="uid://cqoc63ip2wgq7" path="res://退出.gd" id="3_xea0e"]
+[ext_resource type="Script" uid="uid://b3siy8wek1ws5" path="res://布局组.gd" id="4_nmrbq"]
 [ext_resource type="PackedScene" uid="uid://c4uon5b3i6vau" path="res://布局1.tscn" id="4_roi7n"]
+[ext_resource type="PackedScene" uid="uid://drenum802234c" path="res://布局2.tscn" id="5_xea0e"]
+[ext_resource type="PackedScene" uid="uid://cgnsbuxw8m5e0" path="res://布局3.tscn" id="7_lvtxw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5cvgg"]
 content_margin_left = 4.0
@@ -17,7 +20,7 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 corner_detail = 5
 
-[node name="Control" type="Control" unique_id=442082997]
+[node name="主场景" type="Control" unique_id=442082997]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -74,31 +77,63 @@ size_flags_horizontal = 3
 
 [node name="HSlider" type="HSlider" parent="." unique_id=1577516277]
 layout_mode = 0
-offset_left = 116.0
-offset_top = 198.0
-offset_right = 304.88892
-offset_bottom = 229.30435
+offset_left = 109.0
+offset_top = 103.0
+offset_right = 297.88892
+offset_bottom = 134.30435
 scale = Vector2(2.07, 2.07)
-value = 50.0
+value = 60.0
 script = ExtResource("2_roi7n")
 
 [node name="Button" type="Button" parent="." unique_id=74392289]
 layout_mode = 0
-offset_left = 800.0
-offset_top = 176.0
-offset_right = 1149.0
-offset_bottom = 279.0
+offset_left = 969.0
+offset_top = 88.0
+offset_right = 1142.0
+offset_bottom = 191.0
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_5cvgg")
 text = "退出"
 script = ExtResource("3_xea0e")
 
-[node name="布局1" parent="." unique_id=99292612 instance=ExtResource("4_roi7n")]
+[node name="切换布局" type="Button" parent="." unique_id=858662286]
+layout_mode = 0
+offset_left = 712.0
+offset_top = 89.0
+offset_right = 949.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_5cvgg")
+text = "切换布局"
+
+[node name="布局组" type="BoxContainer" parent="." unique_id=461416581]
 layout_mode = 1
-offset_left = 76.0
-offset_top = 358.0
-offset_right = -76.0
-offset_bottom = -101.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = 320.0
+offset_right = -60.0
+offset_bottom = -128.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_nmrbq")
+
+[node name="布局1" parent="布局组" unique_id=99292612 instance=ExtResource("4_roi7n")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="布局2" parent="布局组" unique_id=1401951529 instance=ExtResource("5_xea0e")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="布局3" parent="布局组" unique_id=497778151 instance=ExtResource("7_lvtxw")]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
 
 [connection signal="value_changed" from="HSlider" to="HSlider" method="_on_value_changed"]
 [connection signal="button_up" from="Button" to="Button" method="_on_button_up"]
+[connection signal="button_up" from="切换布局" to="布局组" method="_on_切换布局_button_up"]
